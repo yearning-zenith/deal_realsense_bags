@@ -7,7 +7,7 @@ bagselect1 = select(trace_1,'Topic','/device_0/sensor_0/Depth_0/image/data');
 
 %select time
 start_time = 9;
-end_time = 9;
+end_time = 10;
 bagselect3 = select(bagselect1, 'Time', [start_time end_time]);
 
 msgs = readMessages(bagselect3);
