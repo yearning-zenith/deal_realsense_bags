@@ -1,6 +1,8 @@
 %deal with intel realsense .bag file
 trace_1=rosbag('20191022_154452.bag');
 
+%trace_1.AvailableTopics show all the available data, data type and number 
+
 %bagselect1 = select(trace_1,'Topic','/device_0/sensor_1/Color_0/image/data');
 bagselect1 = select(trace_1,'Topic','/device_0/sensor_0/Depth_0/image/data');
 %bagselect1 = select(trace_1,'Topic','/device_0/sensor_2/Gyro_0/imu/data');
